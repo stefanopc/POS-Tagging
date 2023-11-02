@@ -1,2 +1,5 @@
 # POS-Tagging
-Part-of-Speech (POS) tagging as Sequence Labeling using RNNs
+
+Part-of-Speech (POS) tagging as Sequence Labeling using Recurrent Neural Networks (RNNs)
+
+Part-Of-Speech (POS) tagging is the task of labellingeach input token, i.e. each word in a sentence,with its appropriate POS marker. A commonapproach to solve the problem is based on neuralarchitectures, in particular on Recurrent Neural Networks.In this assignment, the dependency-parsedPenn Treebank corpus was used, which consistsof documents and the corresponding POS tag foreach token. After pre-processing the corpus, theinput was embedded using pre-trained GloVe embeddingsto handle the Out-Of-Vocabulary (OOV)words. Next, four different models were definedand trained: BiLSTM, BiGRU, double BiLSTMand BiLSTM with two dense layers. As for theperformances of each model, F1-macro score wascomputed on the validation set to choose the twobest models to be further evaluated on the test set.When evaluating the models, punctuation classeswere ignored and did not contribute to the finalevaluation.
